@@ -6,7 +6,7 @@ import cv2
 from utils import Figure
 from skimage.morphology import thin
 
-fig=Figure(1,4)
+fig=Figure(2,2)
 
 #Original Image
 a=np.float32(cv2.imread('./fp2.png',0))
