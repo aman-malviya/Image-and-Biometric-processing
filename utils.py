@@ -13,8 +13,9 @@ class Figure:
     def plot_for_me(self,index,image,title=""):
         self.fig.add_subplot(self.rows,self.cols,index)
         plt.title(title)
-        plt.imshow(image, cmap="gray")
-        plt.axis("off")
+        if image != [[]]:
+            plt.imshow(image, cmap="gray")
+            plt.axis("off")
         
 
 #Transformations
